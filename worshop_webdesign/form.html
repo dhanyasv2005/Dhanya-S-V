@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Form</h1>
+    </div>
+    <div>
+        <form name="formName" onsubmit="return validateForm()"> <!--we can use onsubmit only when submit button is created-->
+            <div>
+                <lable>Name</lable>
+                <span>*</span>
+                <span>;</span>
+                <input type="text" id="nameID" name="nameName" required>
+            </div><br>
+
+           
+             <div>
+                <lable for="dobID">Date of birth</lable>
+                <span>*</span>
+                <span>;</span>
+                <input type="date" id="dobID" name="nameName" required>
+            </div><br>
+           
+       
+            <div>
+                <lable>Email</lable>
+                <span>*</span>
+                <span>;</span>
+                <input type="email" id="emailID" name="nameName" required>
+            </div><br>
+
+            <div>
+                <lable>Select Gender</lable>
+                <span>*</span>
+                <span>;</span>
+                <input type="radio" id="male" name="gender" required>
+                <lable for="male">Male</lable>
+                <input type="radio" id="female" name="gender" required>
+                <lable for="female">Female</lable>
+                <input type="radio" id="other" name="gender" required>
+                <lable for="other">Other</lable>
+            </div><br>
+
+            <div>
+                <lable for="phone">Phone Number</lable>
+                <span>*</span>
+                <span>;</span>
+                <input type="number" id="phone" name="phone" required>
+            </div><br>
+
+            <div>
+                <lable for="password">Password</lable>
+                <span>*</span>
+                <span>;</span>
+                <input type="password" id="password" name="password" required>
+            </div><br>
+
+            <div>
+                <lable for="confirm_password">Confirm password</lable>
+                <span>*</span>
+                <span>;</span>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div><br>
+
+            <div>
+                <button type="submit" value="Submit">Submit</button>
+                <button type="reset" value="Clear" onclick="resetForm()">Clear</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

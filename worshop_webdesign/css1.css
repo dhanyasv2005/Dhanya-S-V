@@ -1,0 +1,8 @@
+h2 {
+    background-color:burlywood;
+    text-align: center;
+    font-size: 30px;
+    border: solid 2px purple;
+    border-radius: 5px;
+    font-family: serif;
+}
